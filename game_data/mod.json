@@ -1,0 +1,19 @@
+{
+    "dependencies": null,
+    "incompatibilities": null,
+    "modId": "eisfeuer_finish_bridges",
+    "options": null,
+    "params": null,
+    "postRunScript": {
+        "fileName": ""
+    },
+    "preRunScript": {
+        "fileName": ""
+    },
+    "revision": 2,
+    "runScript": {
+        "fileName": ""
+    },
+    "severityAdd": "None",
+    "severityRemove": "None"
+}
