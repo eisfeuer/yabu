@@ -1,15 +1,15 @@
-local Yabu = ug_require("eisfeuer_finish_bridges::/infrastructure/bridge/yabu.tl")
+local Yabu = ug_require("yourname_new_bridge::/infrastructure/bridge/yabu.tl")
 
 function data()
 
-local repo = Yabu.initializeModelPartRepository("eisfeuer_finish_bridges::/infrastructure/bridge/luhdanmaeen_rautatiesilta/")
+local repo = Yabu.initializeModelPartRepository("yourname_new_bridge::/infrastructure/bridge/new_bridge/")
 
 -- Add part models here
 
 return {
 	description = {
-		name = "Luhdanmäen rautatiesilta",
-		icon = "luhdanmaeen_rautatiesilta.tga",
+		name = _("NEW_BRIDGE_NAME"),
+		icon = "new_bridge.tga",
 	},
 
 	availability = {
@@ -88,7 +88,7 @@ return {
 	},
 	
 	updateScript = {
-		fileName = "finland.script@luhdanmaeen_rautatiesilta.updateFn",
+		fileName = "new_bridge.script@bridge.updateFn",
 		params = {
 			repo = repo
 		}

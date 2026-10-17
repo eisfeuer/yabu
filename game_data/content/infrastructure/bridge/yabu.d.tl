@@ -66,6 +66,10 @@ local record Yabu
         abutment: AbutmentInjection | nil -- injection function for abutment (nil if bridge has no abutments)
     end
 
+    record YabuRailingIntervalData
+        avgLaneOffset: number -- average offset of all lanes
+    end
+
     record RailingInterval
         intervalIndex: integer -- index of the interval
         curvature: number -- curvature
@@ -75,6 +79,7 @@ local record Yabu
         width: number -- with of the street/tracks
         beginNeedEntry: boolean -- section has prepending abutment
         endNeedEntry: boolean -- section has appending abutment
+        yabu: YabuRailingIntervalData -- additional computed data which are not from the original interval
     end
 
     -- injection function for the railing/deck section

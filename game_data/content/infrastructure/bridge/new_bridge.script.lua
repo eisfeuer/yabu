@@ -8,7 +8,8 @@ function data()
                 local injections = {}
 
                 injections.railing = function (bridge, railingInterval)
-                    
+                    local sectionModels = {}
+                    return Yabu.getMergedRailingSectionModel(sectionModels)
                 end
 
                 injections.pillar = function (bridge, pillar)

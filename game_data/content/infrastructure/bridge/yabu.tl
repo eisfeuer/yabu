@@ -46,7 +46,10 @@ function yabu.getResultModels(bridge: Yabu.Bridge): Yabu.BridgeModelList
             length = railingInterval.length,
             width = bridge.params.railingWidth,
             beginNeedEntry = bridge.params.beginNeedEntry and intervalIndex == 1,
-            endNeedEntry = bridge.params.endNeedEntry and intervalIndex == #bridge.params.railingIntervals
+            endNeedEntry = bridge.params.endNeedEntry and intervalIndex == #bridge.params.railingIntervals,
+            yabu = {
+                avgLaneOffset = yabu.getAvgLaneOffset(railingInterval)
+            }
         }))
     end
 
